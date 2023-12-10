@@ -32,6 +32,16 @@ int main(int argc, char *argv[]) {
     while (fgets(linha, sizeof(linha), arquivo_saida) != NULL) {
         if (strstr(linha, ".") == NULL) {
             printf("%s", linha);
+        }else{
+            if (strstr(linha, ".ascii") != NULL) {
+                printf("%s", linha);
+            }
+            if (strstr(linha, ".text") != NULL) {
+                printf("%s", linha);
+            }
+            if (strstr(linha, ".long") != NULL) {
+                printf("%s", linha);
+            }
         }
     }
 
