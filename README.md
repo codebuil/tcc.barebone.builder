@@ -1,4 +1,5 @@
-# vba.happy.new.year
-count down to new year in seconds
+# c.portable.barebone
+
+pcc portable c barebone
 
 
