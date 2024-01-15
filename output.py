@@ -1,3 +1,4 @@
+import re
 print ("\x1bc\x1b[43;37m")
 files="/tmp/null"
 f1=open(files,"r")
@@ -15,6 +16,21 @@ for n in fill:
     else:
         nn=n.split(":")
         if len(nn)>1:
-            nnn=nn[1]
-            nnn=nnn[22:]
-            print(f"{nnn}")
+            n=nn[1]
+            m=re.search(r"\s{2}[a-zA-Z].*",n)
+            if m!=None:
+                n=m[0]
+                f=n.find(">")
+                if f>-1:
+                    n=n.replace(">","")
+                    
+                    #try:
+                     
+                    mm=re.search(r"[a-zA-Z]{2,}(.*\s<).*$",n)
+                    if mm!=None:
+                        n=n.replace(mm[1]," ")
+                        print(f"{n}")
+                else:
+                    pass
+                    print(f"{n}")
+                
