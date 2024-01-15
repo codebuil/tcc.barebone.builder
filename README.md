@@ -1,5 +1,9 @@
-# list.stdlib.functions
+# objdump2source
 
-list same stand lib functions
+convert output into source code
+
+objdump must by go to file /tmp/null
+
+this application convert into source the /tmp/null file
 
 
