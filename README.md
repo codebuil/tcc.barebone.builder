@@ -1,5 +1,5 @@
-# c.portable.barebone
+# list.stdlib.functions
 
-pcc portable c barebone
+list same stand lib functions
 
 
