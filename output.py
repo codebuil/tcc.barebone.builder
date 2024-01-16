@@ -31,6 +31,6 @@ for n in fill:
                         n=n.replace(mm[1]," ")
                         print(f"{n}")
                 else:
-                    pass
+                
                     print(f"{n}")
                 
