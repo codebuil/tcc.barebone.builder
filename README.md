@@ -1,9 +1,3 @@
-# objdump2source
+# tcc.barbone.builder
 
-convert output into source code
-
-objdump must by go to file /tmp/null
-
-this application convert into source the /tmp/null file
-
-
+build a barebone cd using a tiny c compiler
